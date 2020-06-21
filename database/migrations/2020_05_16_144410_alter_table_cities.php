@@ -1,0 +1,34 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class AlterTableCities extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('cities',function (Blueprint $table){
+            $table->double('longitude')->after('timezone');
+            $table->double('latitude')->after('longitude');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('cities',function (Blueprint $table){
+            $table->dropColumn('longitude');
+            $table->dropColumn('latitude');
+        });
+    }
+}

@@ -1,0 +1,251 @@
+*{
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+body{
+    box-sizing: border-box;
+}
+p{
+    margin:0;
+}
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+header{
+    background: #005FA3;
+}
+/* header */
+
+
+#menu-user{
+    z-index: 1040;
+}
+.error{
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+
+/* Navigation */
+#navigation{
+    background-color: #fff;
+    /*padding: 7px;*/
+}
+ .navbar.navbar-expand-lg{
+    padding: 0;
+}
+#nav-item{
+    color: #005FA3;
+    display: block;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#nav-item:after{
+    content: "";
+    display: none;
+    width: 100%;
+    height: 7px;
+    background-color: #005FA3;
+    position: absolute;
+    bottom : 90%;
+    left : 0;
+    z-index: 1;
+}
+#nav-item:hover:after{
+    display: block;
+    transition: display .3s ease;
+}
+
+.burger-item{
+    display: block;
+    width:40px;
+    height:5px;
+    background-color: #fff;
+    font-size: 0px;
+    color:transparent;
+    position: relative;
+    right: 0;
+    transition: all 0.3s ease 0s;
+}
+.burger-item:before,
+.burger-item:after{
+    background-color: #fff;
+    content: "";
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.burger-item:before{
+    top:-12px;
+}
+.burger-item:after{
+    bottom: -12px;
+}
+
+.burger-item.active:before{
+    transform:rotate(45deg);
+    top:0;
+}
+.burger-item.active:after{
+    transform:rotate(-45deg);
+    bottom:0;
+}
+.burger-item.active{
+    background-color: transparent;
+}
+
+
+/* Slider */
+#text-slider{
+    font-size: 20px;
+    position: absolute;
+    bottom: -3px;
+    right: 30px;
+}
+
+
+/* Sale section */
+.wan-input{
+    border: none;
+    border-radius: 7px;
+}
+.plus,.minus{
+    border: none;
+    color: #005FA3;
+    background-color: #fff;
+    width: 20%;
+    border-radius: 50%;
+}
+#saleticket{
+    background: #005FA3;
+    border-radius: 8px;
+    position: relative;
+    top: -110px;
+}
+#saleticket-title{
+    font-size: 20px;
+}
+#calendar,#calendar1,#calendar2,#calendarbook1,#calendarbook2{
+    padding-left: 10px;
+    color: #005FA3;
+    background: #fff url(/img/datepick.png) 97% 50% no-repeat;
+    width: 100%;
+}
+.ui-widget-content{
+    background: #fff 50% top repeat-x;
+}
+.ui-widget-header{
+    background: #005FA3 50% 50% repeat-x;
+}
+#ui-datepicker-div{
+    z-index: 1050!important;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active{
+    background: #0078ae 50% 50% repeat-x;
+    color: #fff;
+    border:1px solid #77d5f7;
+}
+.ui-icon{
+    background-color: #005FA3;
+}
+.wan-input{
+    width: 30% !important;
+}
+
+
+/* News */
+#text-news{
+    font-size: 20px;
+}
+#news-btn{
+    background-color: #005FA3;
+    color: #fff;
+}
+#date-news{
+    font-size: 12px;
+    color:rgb(82, 90, 95)
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+      /* width: 100%; */
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+
+/* Footer */
+
+
+.footer{
+    background-color: #005FA3;
+    flex: 0 0 auto;
+}
+#title-link{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+#footer-link{
+    color:#fff;
+    font-size: 14px;
+}
+
+.accordion {
+    background-color: #005FA3;
+    color: #fff;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.panel {
+    padding: 0 18px;
+    color: #212121;
+    background-color: #005FA3;
+    /* max-height: 0; */
+    overflow: visible;
+    transition: max-height 0.3s ease-out;
+}

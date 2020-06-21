@@ -1,0 +1,65 @@
+@media screen and (max-width:992px){
+.accordion:hover {
+    background-color: #0078ae;
+}
+header{
+    position: fixed;
+    z-index: 2000;
+    top:0;
+    width: 100%;
+}
+#body-item{
+    margin-top: 80px;
+}
+    #carouselExampleIndicators{
+        margin-top: 60px;
+    }
+.accordion:after {
+content:"";
+display: block;
+width: 16px;
+height: 16px;
+border-top: 2px solid #fff;
+border-right: 2px solid #fff;
+float: right;
+z-index: 1;
+transform: rotate(135deg);
+transition: transform .1s;
+}
+.accordion::before{
+    content:"";
+    border: 1px solid #fff;
+    position: absolute;
+    right: 4px;
+    top: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.active:after {
+    transform: rotate(315deg);
+}
+.panel{
+    overflow: hidden;
+    max-height: 0;
+}
+#footer-link{
+    padding-top: 5px;
+    font-size: 20px;
+}
+#navbar-scroll{
+    max-height:70vh;
+    overflow-y: scroll;
+}
+#nav-item:after{
+    height: 0;
+}
+}
+@media screen and (max-width:768px){
+    .plus,.minus{
+        width: 10%;
+    }
+}
+@media screen and (max-width:575px){
+}
